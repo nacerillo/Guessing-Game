@@ -20,7 +20,7 @@ else {
 }
 
 var moons = prompt("Jupiter has over a dozen moons");
-    if(moons.toLowerCaser() == "y" || moons.toLowerCaser() == "yes"){
+    if(moons.toLowerCase() == "y" || moons.toLowerCase() == "yes"){
         alert("That's right! but did you know that Jupitor has OVER 70 OF THEM! Thats a LOT of friggin moons!");
 }
     else {
