@@ -12,9 +12,6 @@ p {
   color: blue;
 }
 
-div {
-  display: inline;
-  width: 100px;
-  height: 150px;
-  border: thin black;
+p {
+  clear: left;
 }
