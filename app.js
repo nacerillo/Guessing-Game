@@ -3,7 +3,7 @@ var name = prompt("Hi! What's your name?");
 
 alert("Nice to meet you " + name + "! and welcome to my webpage!");
 
-var crazy = prompt("Being from Florida, I must be totally crazy, right?");
+/*var crazy = prompt("Being from Florida, I must be totally crazy, right?");
 if( crazy.toLowerCase() == "y" || crazy.toLowerCase() == "yes"){
     alert("Nope! I have my quirks, sure, but I'm not a complete looney, lol.");
 }
@@ -33,4 +33,4 @@ var year =  prompt("Will things be ANY better in 2021?");
     }
     else {
         alert("Things WILL get better, we just gotta believe that we can MAKE it better");
-    }
+    }*/
