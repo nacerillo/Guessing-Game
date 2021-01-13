@@ -75,6 +75,7 @@ while(attempts > 0){
 
     for(var x = 0; x < array.length; x++){
         if(movie.toLowerCase() == array[x]){
+        correct += 1;
         alert("you've answered correctly! see what other movies I like printed in the console!" );
         console.log(array);
         break;
@@ -90,6 +91,8 @@ if(attempts == 0){
     alert("You have ran out of attempts. but you can see some of my favorite movies listed on the page, and printed in the console");
     console.log(array);
 }
+
+alert("You have answered " + correct + "out of 7 questions correctly" );
 
 //console.log('loop is done', answers);
 
