@@ -22,6 +22,8 @@ alert("Nice to meet you " + name + "! and welcome! Prepare to answer a some ques
 
 
 //First Set of Questions
+function firstSet() {
+
 var crazy = prompt("QUESTION 1: Being from Florida, I must be totally crazy, right?");
 if( crazy.toLowerCase() == "y" || crazy.toLowerCase() == "yes"){
     alert("Sorry, that is incorrect");
@@ -57,7 +59,9 @@ var year =  prompt("QUESTION 4: Will things be ANY better in 2021?");
     else {
         alert("Incorrect. Things WILL get better, we just gotta believe that we can MAKE it better");
     }
+}
 
+firstSet();
 
 
 ///Guess my age
