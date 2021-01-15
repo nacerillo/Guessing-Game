@@ -1,15 +1,22 @@
 body {
-  background: rgb(146, 223, 146);
+  background: rgb(37, 39, 163);
 }
 h1 {
-  background: red;
-  color: blue;
+  color: rgb(148, 217, 235);
+}
+h4 {
+  color: rgb(148, 217, 235);
 }
 
+div {
+  margin: 10px;
+  color: yellow;
+  border-style: dotted;
+}
 p {
-  border: thin black;
-  background-color: green;
-  color: blue;
+  border: black;
+
+  color: yellow;
 }
 
 p {

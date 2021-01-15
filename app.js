@@ -1,27 +1,14 @@
 var name = prompt("Hi! What's your name?");
-var questionArray = ["QUESTION 1: Being from Florida, I must be totally crazy, right?", 
+/*var questionArray = ["QUESTION 1: Being from Florida, I must be totally crazy, right?", 
 "QUESTION 2: I can't stand the weather here in Washington! True or false?",
 "QUESTION 3: Does Jupiter has over a dozen moons?",
- "QUESTION 4: Will things be ANY better in 2021?"]
+ "QUESTION 4: Will things be ANY better in 2021?"]*/
 var correct = 0;
 alert("Nice to meet you " + name + "! and welcome! Prepare to answer a some questions!");
-//FirstSet()
-//ageGuess()
 
+firstQuestion();
 
-/*
- function FirstSet(questionArray){
-     for(var i = 0; i < questionArray.length; i++){
-         var response = prompt(questionArray[i]);
-         
-
-     }
- }
-*/
-// var crazy = prompt("");
-
-
-//First Set of Questions
+function firstQuestion(){
 var crazy = prompt("QUESTION 1: Being from Florida, I must be totally crazy, right?");
 if( crazy.toLowerCase() == "y" || crazy.toLowerCase() == "yes"){
     alert("Sorry, that is incorrect");
@@ -30,14 +17,14 @@ else {
     alert("Thats right! I'm a completely normal person... relatively...");
     correct+=1;
 }
-
+}
 var weather = prompt("QUESTION 2: Do you think that I hate the weather here?");
 if(weather.toLowerCase() == "y" || weather.toLowerCase() == "yes"){
     alert("that is correct. I dont like it here, butI might get used to it.")
     correct+=1;
 }
 else {
-    alert("Incorrect. I'm getting used to it, but to be honest I'm not a fan lol");
+    alert("incorrect. I'm getting used to it, but to be honest I'm not a fan lol");
 }
 
 var moons = prompt("QUESTION 3: Does Jupiter has over a dozen moons?");
@@ -55,12 +42,9 @@ var year =  prompt("QUESTION 4: Will things be ANY better in 2021?");
         correct+=1;
     }
     else {
-        alert("Incorrect. Things WILL get better, we just gotta believe that we can MAKE it better");
+        alert("WRONG! Things WILL get better, we just gotta believe that we can MAKE it better");
     }
-
-
-
-///Guess my age
+var answers = [];
 var guesses = 6;
 var age = 26;
 while(guesses  > 0){
@@ -73,83 +57,24 @@ while(guesses  > 0){
     else if(number > age){
         alert(
             "too high"
-        );      
+        );
+        
     }
     else if (number < age){
         alert("too low")
     }
-        guesses -= 1;  
+    
+        guesses -= 1;
+    
 }
 if(guesses <= 0){
     alert("you have ran out of guesses. I am actually 26 years old");
 }
 
-/*
-function guessMovies(movieArray){
-    var attempts = 6;
-    var movieArray = ["arrival", "silence of the lambs", "the isle of dogs", "lord of the rings", "elf", "braveheart", "mad max", "pulp fiction", "guardians of the galaxy"]
-    alert("QUESTION 6: Can you name one of my favorite movies?")
-
-    while(attempts > 0){
-        movie = prompt("You have " + attempts + " attempts remaining");
-        for(var x = 0; x < array.length; x++)
-        {
-            if(movie.toLowerCase() == movieArray[x]){
-                correct += 1;
-                alert("you've answered correctly! see what other movies I like printed in the console!" );
-                console.log(movieArray);
-                break;
-            }
-            else{
-                alert("Wrong");
-                attempts -= 1;
-                break;
-           }
-    }
-}
-if(attempts == 0){
-    alert("You have ran out of attempts. but you can see some of my favorite movies listed on the page, and printed in the console");
-    console.log(movieArray);
-}
-}
-*/ 
-
-
-
-
-//Movie Questions
 var attempts = 6;
-var movieArray = [
-"arrival", 
-"silence of the lambs", 
-"the isle of dogs",
-"lord of the rings", "elf",
-"braveheart", 
-"mad max", 
-"pulp fiction", 
-"guardians of the galaxy"];
+var movieArray = ["arrival", "silence of the lambs", "the isle of dogs", "lord of the rings", "elf", "braveheart", "mad max", "pulp fiction", "guardians of the galaxy"]
 alert("QUESTION 6: Can you name one of my favorite movies?")
-//
-/*function ageGuess(){
-    while(attempts > 0){
-    movie = prompt("You have " + attempts + " attempts remaining");
 
-    for(var x = 0; x < array.length; x++){
-        if(movie.toLowerCase() == movieArray[x]){
-        correct += 1;
-        alert("you've answered correctly! see what other movies I like printed in the console!" );
-        console.log(movieArray);
-        break;
-        }
-        else{
-            alert("Wrong");
-            attempts -= 1;
-            break;
-        }
-    }
-}
-
-}*/
 while(attempts > 0){
     movie = prompt("You have " + attempts + " attempts remaining");
 
